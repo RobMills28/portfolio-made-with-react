@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiPython, DiReact, DiAws } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -8,41 +8,42 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-    I've worked with a range of technologies in the web development world
+    I specialise in cloud architecture, artificial intelligence, and full-stack development
     </SectionText>
     <List>
+      <ListItem>
+        <picture>
+          <DiAws size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Cloud Architecture</ListTitle>
+          <ListParagraph>
+            AWS Solutions Architecture <br />
+            EC2, S3, Lambda, CloudFormation
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <DiPython size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>AI & Machine Learning</ListTitle>
+          <ListParagraph>
+            Python, PyTorch, TensorFlow <br />
+            Deep Learning & Computer Vision
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
       <ListItem>
         <picture>
           <DiReact size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Full-Stack Development</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-          Some Experience with <br />
-            Python and Node.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-          I have used graphics editors like Adobe Photoshop and Microsoft Paint
+            React, Node.js, Docker <br />
+            Modern web applications
           </ListParagraph>
         </ListContainer>
       </ListItem>

@@ -2,9 +2,19 @@ import styled from 'styled-components';
 
 export const Img = styled.img`
   width:100%;
-  height:100%;
+  height: 100%;      
   object-fit: cover;
   overflow: hidden;
+  
+  /* Make hurricane forecasting image bigger */
+  ${props => props.projectId === 1 && `
+    height: 330px;
+  `}
+  
+  /* Make police database same height as computer vision */
+  ${props => props.projectId === 3 && `
+    height: 260px;
+  `}
 `
 
 export const GridContainer = styled.section`
@@ -35,9 +45,7 @@ export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-
 `;
-
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
@@ -65,20 +73,20 @@ export const Intro = styled.div`
   line-height: 18px;
 `;
 
-
+// FIXED: Better text spacing and alignment
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 30px;                 /* Reduced from 50px for better balance */
   color: #e4e6e7;
   font-style: 2rem;
-  line-height: 24px;
-  text-align: justify;
+  line-height: 1.4;                /* Slightly tighter than 1.5 */
+  text-align: left;
+  text-indent: 0;                  /* Ensure no indentation */
+  margin: 1rem 0;                  /* Add consistent top/bottom margins */
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
-}
+    padding: 1rem;                 /* Better mobile padding */
+  }
 `;
-
 
 export const UtilityList = styled.ul`
   list-style-type: none;
@@ -97,7 +105,6 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #801414;
-
 }
 `;
 
@@ -109,4 +116,9 @@ padding: 2rem;
 export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
+`
+
+// ADDED: New component for Stack section with better spacing
+export const StackSection = styled.div`
+  margin-top: 1.5rem;  /* Add space above Stack */
 `

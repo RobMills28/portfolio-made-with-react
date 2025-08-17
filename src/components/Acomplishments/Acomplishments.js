@@ -4,19 +4,19 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 10, text: 'Projects on GitHub'},
-  { number: 500, text: 'Hours worth of learning on Free Code Camp', },
-  { number: 500, text: 'Hours worth of learning on The Odin Project', },
-  { number: 100, text: 'Hours spent going through W3Schools lessons', }
+  { number: 3, text: 'Years Experience with AI/ML'},
+  { number: 30, text: 'Projects on GitHub', },
+  { number: 12, text: 'AWS Services Deployed', },
+  { number: 64, text: 'Current MSc Grade Average (%)', }
 ];
 
 const Acomplishments = () => (
   <Section>
-    <SectionTitle>Personal Achievements</SectionTitle>
+    <SectionTitle>Key Achievements</SectionTitle>
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>
-          <BoxNum>{`${card.number}+`}</BoxNum>
+          <BoxNum>{`${card.number}${index === 3 ? '%' : '+'}`}</BoxNum>
           <BoxText>{card.text}</BoxText>
         </Box>
       ))}
