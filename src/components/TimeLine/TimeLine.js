@@ -46,7 +46,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      Currently completing an MSc in Computer Science (AI) at the University of Nottingham whilst preparing for AWS Solutions Architect certification. I'm passionate about cloud architecture, artificial intelligence, and building scalable systems.
+      I recently completed an MSc in Computer Science (Artificial Intelligence) at the University of Nottingham and hold the AWS Certified Cloud Practitioner certification. I am currently preparing for the AWS Solutions Architect Associate certification. I'm passionate about cloud architecture, artificial intelligence, and building scalable systems.
       </SectionText>
       <SectionDivider />
     </Section>
