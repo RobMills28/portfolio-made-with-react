@@ -7,7 +7,8 @@ const data = [
   { number: 3, text: 'Years Experience with AI/ML'},
   { number: 30, text: 'Projects on GitHub', },
   { number: 12, text: 'AWS Services Deployed', },
-  { number: 65, text: 'Current MSc Grade Average (Awaiting Final Result)', }
+  { number: 65, text: 'Current MSc Grade Average - (Awaiting Final Result)', },
+  {text: 'Passed the AWS Certified Cloud Practitioner Exam',}
 ];
 
 const Acomplishments = () => (
